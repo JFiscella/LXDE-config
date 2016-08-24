@@ -1,12 +1,10 @@
-# LXDE config/joey
+# LXDE to OS X 
 
-![megingjard](terminal.png)
-
-this is my LXDE config!
+![there's no place like ~/.](terminal.png)
 
 ## about
 
-makes LXDE more like OS X, best when used with OS X keyboard ofc
+this is a maximum productivity module, it makes LXDE work and feel more like OS X. best when used with a MacBook keyboard and touchpad
 
 ### table of contents
 
@@ -34,7 +32,7 @@ i switch my desktop using super+1, super+2, super+n... etc so that's there
 
 also, the shutter program allows you to take screenshots like OS X
 
-so super+shift+4 is a selection screenshot
+super+shift+4 is a selection screenshot
 
 super+shift+5 is an EMACS-like keybind,
 
