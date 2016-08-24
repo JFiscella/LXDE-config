@@ -1,0 +1,7 @@
+@lxpanel --profile LXDE
+@pcmanfm --desktop --profile LXDE
+@xscreensaver -no-splash
+synclient MaxTapTime=180
+synclient PalmDetect=1
+@syndaemon -d -t -i 1
+@xmodmap /home/joey/.config/joey/.caps_esc
