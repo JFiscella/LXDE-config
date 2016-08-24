@@ -65,17 +65,19 @@ there are some prereqs,
 
 ### prerequisites
 
-wmctrl
+[wmctrl][0]
 
 ```
 apt-get install wmctrl
 ```
 
-shutter
+[shutter][1]
 
 ```
 apt-get install shutter
 ```
+
+### installation 
 
 now, clone this repo to ~/.config/joey
 
@@ -130,4 +132,9 @@ synapse
 ```
 apt-get install synapse
 ```
+
+
+
+[0]: https://sites.google.com/site/tstyblo/wmctrl "wmctrl on sites.google.com"
+[1]: http://shutter-project.org/ "shutter project"
 
