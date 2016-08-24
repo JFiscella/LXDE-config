@@ -8,10 +8,19 @@ this is my LXDE config!
 
 makes LXDE more like OS X, best when used with OS X keyboard ofc
 
-### contents:
+### table of contents
 
-i. lxde-rc.xml
-ii. autostart
+i. [lxde-rc.xml](#lxde-rc.xml)
+
+ii. [autostart](#autostart)
+
+iii. [install](#install)
+
+iv. [deploy](#deploy-new-version-to-git)
+
+v. [additional](#additional-stuff)
+
+## sections
 
 ### lxde-rc.xml
 
