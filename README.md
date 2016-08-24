@@ -1,5 +1,7 @@
 # LXDE config/joey
 
+![megingjard](terminal.png)
+
 this is my LXDE config!
 
 ## about
