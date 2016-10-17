@@ -378,8 +378,8 @@ desktop 2
             <keybind key="W-apostrophe"><action name="MoveResizeTo">
                     <x>center</x>
                     <y>center</y>
-                    <width>1/2</width>
-                    <height>1/2</height>
+                    <width>70%</width>
+                    <height>75%</height>
             </action></keybind>
 
             <!-- shrink window -->
@@ -391,6 +391,11 @@ desktop 2
             <keybind key="W-S-M"><action name="ResizeRelative">
                     <right>125</right>
                     <bottom>125</bottom>
+            </action></keybind>
+
+            <!-- open gnome-calculator -->
+            <keybind key="W-S-a"><action name="Execute">
+                    <command> gnome-calculator </command>
             </action></keybind>
 
 
@@ -416,9 +421,12 @@ desktop 2
             pcmanfm
         </command></action></keybind><!-- Keybindings for finding files --><keybind key="W-S-f"><action name="Execute"><command>
             pcmanfm --find-files
-        </command></action></keybind><!--keybindings for LXPanel --><keybind key="W-S-A-r"><action name="Execute"><command>
+            </command></action></keybind><!--keybindings for LXPanel -->
+        <keybind key="W-S-A-r"><action name="Execute"><command>
             lxpanelctl run
-        </command></action></keybind><keybind key="A-F2"><action name="Execute"><command>
+            </command></action></keybind>
+            
+            <keybind key="A-F2"><action name="Execute"><command>
             lxpanelctl run
         </command></action></keybind><keybind key="C-Escape"><action name="Execute"><command>
             lxpanelctl menu
