@@ -137,6 +137,12 @@ xclip
 apt-get install xclip
 ```
 
+arandr 
+
+```
+apt-get install arandr
+```
+
 [0]: https://sites.google.com/site/tstyblo/wmctrl "wmctrl on sites.google.com"
 [1]: http://shutter-project.org/ "shutter project"
 

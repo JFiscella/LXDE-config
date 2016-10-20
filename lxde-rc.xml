@@ -344,9 +344,9 @@ desktop 2
             <keybind key="W-N"><action name="MoveResizeTo"><monitor>prev</monitor></action></keybind>
 
             <!-- move window to monitor 1 -->
-            <keybind key="W-S"><action name="MoveResizeTo"><monitor>1</monitor></action></keybind>
+            <keybind key="W-F"><action name="MoveResizeTo"><monitor>1</monitor></action></keybind>
             <!-- move window to monitor 2 -->
-            <keybind key="W-F"><action name="MoveResizeTo"><monitor>2</monitor></action></keybind>
+            <keybind key="W-S"><action name="MoveResizeTo"><monitor>2</monitor></action></keybind>
             <!-- move window to monitor 3 -->
             <keybind key="W-D"><action name="MoveResizeTo"><monitor>3</monitor></action></keybind>
 
@@ -413,7 +413,12 @@ desktop 2
             yes
         </panels><desktop>
             yes
-        </desktop></action></keybind><!-- Keybindings for running applications --><!-- switch by application --><keybind key="W-grave"><action name="execute"><execute>wmctrl-switch-by-application</execute></action></keybind><!-- shutter screenshots --><keybind key="W-S-4"><action name="execute"><execute>shutter -s</execute></action></keybind><keybind key="W-S-5"><keybind key="space"><action name="execute"><execute>shutter -w</execute></action></keybind></keybind><keybind key="W-S-5"><keybind key="5"><action name="execute"><execute>shutter -f</execute></action></keybind></keybind><keybind key="W-e"><action name="Execute"><startupnotify><enabled>
+                </desktop></action></keybind><!-- Keybindings for running applications --><!-- switch by application --><keybind key="W-grave"><action name="execute"><execute>wmctrl-switch-by-application</execute></action></keybind>
+                
+                <!-- dickbutt prevention mechanism: lock screen hotkey -->
+                <keybind key="W-S-L"><action name="execute"><execute>gnome-screensaver-command -l</execute></action></keybind>
+                
+                <!-- shutter screenshots --><keybind key="W-S-4"><action name="execute"><execute>shutter -s</execute></action></keybind><keybind key="W-S-5"><keybind key="space"><action name="execute"><execute>shutter -w</execute></action></keybind></keybind><keybind key="W-S-5"><keybind key="5"><action name="execute"><execute>shutter -f</execute></action></keybind></keybind><keybind key="W-e"><action name="Execute"><startupnotify><enabled>
                 true
             </enabled><name>
                 PCManFM
