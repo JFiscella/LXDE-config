@@ -143,6 +143,17 @@ arandr
 apt-get install arandr
 ```
 
+### xrandr notes
+
+http://www.sudo-juice.com/change-lxde-screen-resolution-ubuntu-lubuntu/
+
+http://blog.bodhizazen.net/linux/use-xrandr-to-set-a-screen-resolution/
+
+https://wiki.lxde.org/en/LXRandR
+
+http://christian.amsuess.com/tools/arandr/
+
+
 [0]: https://sites.google.com/site/tstyblo/wmctrl "wmctrl on sites.google.com"
 [1]: http://shutter-project.org/ "shutter project"
 
