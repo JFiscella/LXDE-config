@@ -143,6 +143,12 @@ arandr
 apt-get install arandr
 ```
 
+lubuntu software center
+
+pulseaudio volume control
+
+xpad
+
 ### xrandr notes
 
 http://www.sudo-juice.com/change-lxde-screen-resolution-ubuntu-lubuntu/
