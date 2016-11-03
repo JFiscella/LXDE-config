@@ -85,6 +85,8 @@ link up wmctrl-switch-by-application:
 ln -s wmctrl-switch-by-application /usr/bin/wmctrl-switch-by-application 
 ```
 
+**NOTE:** on some systems, `ln` should point to the full path of `wmctrl-switch-by-application`. 
+
 place autostart in its correct path:
 
 ```
@@ -131,6 +133,14 @@ synapse
 apt-get install synapse
 ```
 
+**for Ubuntu 14.04**:
+```
+sudo add-apt-repository ppa:synapse-core/ppa 
+sudo apt-get update
+sudo apt-get install synapse
+```
+
+
 xclip
 
 ```
@@ -158,6 +168,41 @@ http://blog.bodhizazen.net/linux/use-xrandr-to-set-a-screen-resolution/
 https://wiki.lxde.org/en/LXRandR
 
 http://christian.amsuess.com/tools/arandr/
+
+## VirtualBox
+
+change the Host Key Combination from Left command to Right command, or something else, since Left command is the super key in LXDE.
+
+## Ubuntu 14.04 notes
+
+there are minor differences between 14.04 and 16.04, when using ubuntu 14.04 be aware of the following differences:
+
+### synapse
+
+synapse needs to be added via ppa, see above...
+
+### lxterminal
+
+lxterminal does not allow shortcut modification in ubuntu 14.04... to upgrade to lxterminal 0.2 (from 0.1), download lxterminal from sourceforge
+
+https://sourceforge.net/projects/lxde/files/LXTerminal%20%28terminal%20emulator%29/LXTerminal%200.2.0/
+
+when running configure, you'll probably be missing some stuff... the pre-requisites i had to install were:
+
+```
+sudo apt-get install intltool
+sudo apt-get install python-gtk2-dev
+sudo apt-get install libvte-dev
+```
+
+then 
+
+```
+make
+make install
+```
+
+and the terminal was updated.
 
 
 [0]: https://sites.google.com/site/tstyblo/wmctrl "wmctrl on sites.google.com"
