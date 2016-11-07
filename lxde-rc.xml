@@ -16,9 +16,7 @@
         </focusNew>
     <!-- always try to focus new windows when they appear. other rules do
        apply -->
-    <followMouse>
-    no
-</followMouse>
+    <followMouse>no</followMouse>
     <!-- move focus to a window when you move the mouse into it -->
     <focusLast>
     yes
@@ -59,7 +57,7 @@
     <primaryMonitor/>
   </placement>
   <theme>
-    <name>Onyx-Citrus</name>
+    <name>Onyx</name>
     <titleLayout>
         NLIMC
     </titleLayout>
@@ -73,12 +71,8 @@
       S: shade (roll up/down)
       D: omnipresent (on all desktops).
   -->
-    <keepBorder>
-    yes
-</keepBorder>
-    <animateIconify>
-    yes
-</animateIconify>
+    <keepBorder>yes</keepBorder>
+    <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
       <name>
         Sans
@@ -216,9 +210,7 @@ desktop 2
 </name>
     -->
     </names>
-    <popupTime>
-    875
-</popupTime>
+    <popupTime>555</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
        desktops.  Set this to 0 to disable the popup. -->
   </desktops>
@@ -253,15 +245,9 @@ desktop 2
      Many programs reserve space automatically, but you can use this in other
      cases. -->
   <margins>
-    <top>
-        0
-    </top>
-    <bottom>
-        0
-    </bottom>
-    <left>
-        0
-    </left>
+    <top>0</top>
+    <bottom>0</bottom>
+    <left>0</left>
     <right>
         0
     </right>
@@ -277,9 +263,7 @@ desktop 2
     <floatingY>
     0
 </floatingY>
-    <noStrut>
-    no
-</noStrut>
+    <noStrut>no</noStrut>
     <stacking>
     Above
 </stacking>
@@ -306,7 +290,8 @@ desktop 2
   </dock>
   <keyboard><chainQuitKey>
         C-g
-    </chainQuitKey><!-- Keybindings for desktop switching --><keybind key="C-A-Left"><action name="DesktopLeft"><dialog>
+    </chainQuitKey><!-- Keybindings for desktop switching --><!-- keybindings for desktop switching are disabled.
+<keybind key="C-A-Left"><action name="DesktopLeft"><dialog>
             no
         </dialog><wrap>
             no
@@ -322,7 +307,8 @@ desktop 2
             no
         </dialog><wrap>
             no
-        </wrap></action></keybind><keybind key="S-A-Left"><action name="SendToDesktopLeft"><dialog>
+        </wrap></action></keybind>
+<keybind key="S-A-Left"><action name="SendToDesktopLeft"><dialog>
             no
         </dialog><wrap>
             no
@@ -338,68 +324,7 @@ desktop 2
             no
         </dialog><wrap>
             no
-            </wrap></action></keybind>
-
-            <!-- move window to next monitor -->
-            <keybind key="W-N"><action name="MoveResizeTo"><monitor>prev</monitor></action></keybind>
-
-            <!-- move window to monitor 1 -->
-            <keybind key="W-F"><action name="MoveResizeTo"><monitor>1</monitor></action></keybind>
-            <!-- move window to monitor 2 -->
-            <keybind key="W-S"><action name="MoveResizeTo"><monitor>2</monitor></action></keybind>
-            <!-- move window to monitor 3 -->
-            <keybind key="W-D"><action name="MoveResizeTo"><monitor>3</monitor></action></keybind>
-
-            <!-- maximize window -->
-            <keybind key="W-semicolon"><action name="GrowToFill"></action></keybind>
-
-            <!-- resize window -->
-            <keybind key="W-R"><action name="Resize"><edge>bottomright</edge></action></keybind>
-
-            <!-- "maximize" window -->
-            <keybind key="W-semicolon"><action name="MoveResizeTo">
-                    <x>0</x>
-                    <y>0</y>
-                    <width>100%</width>
-                    <height>100%</height>
-                    <monitor>current</monitor>
-            </action></keybind>
-
-            <!-- move window -->
-            <keybind key="W-S-R"><action name="Move"></action></keybind>
-
-            <!-- center window -->
-            <keybind key="W-G"><action name="MoveResizeTo">
-                    <x>center</x>
-                    <y>center</y>
-            </action></keybind>
-
-            <!-- resize to 1/2 and center window -->
-            <keybind key="W-apostrophe"><action name="MoveResizeTo">
-                    <x>center</x>
-                    <y>center</y>
-                    <width>70%</width>
-                    <height>75%</height>
-            </action></keybind>
-
-            <!-- shrink window -->
-            <keybind key="W-M"><action name="ResizeRelative">
-                    <right>-125</right>
-                    <bottom>-125</bottom>
-            </action></keybind>
-            <!-- grow window -->
-            <keybind key="W-S-M"><action name="ResizeRelative">
-                    <right>125</right>
-                    <bottom>125</bottom>
-            </action></keybind>
-
-            <!-- open gnome-calculator -->
-            <keybind key="W-S-a"><action name="Execute">
-                    <command> gnome-calculator </command>
-            </action></keybind>
-
-
-            <keybind key="W-1"><action name="Desktop"><desktop>
+            </wrap></action></keybind> --><!-- move window to next monitor --><keybind key="W-S-N"><action name="MoveResizeTo"><monitor>prev</monitor></action></keybind><!-- move window to monitor 1 --><keybind key="W-F"><action name="MoveResizeTo"><monitor>1</monitor></action></keybind><!-- move window to monitor 2 --><keybind key="W-S"><action name="MoveResizeTo"><monitor>2</monitor></action></keybind><!-- move window to monitor 3 --><keybind key="W-D"><action name="MoveResizeTo"><monitor>3</monitor></action></keybind><!-- maximize window --><keybind key="W-semicolon"><action name="GrowToFill"/></keybind><!-- resize window --><keybind key="W-R"><action name="Resize"><edge>bottomright</edge></action></keybind><!-- "maximize" window --><keybind key="W-semicolon"><action name="MoveResizeTo"><x>0</x><y>0</y><width>100%</width><height>100%</height><monitor>current</monitor></action></keybind><!-- move window --><keybind key="W-S-R"><action name="Move"/></keybind><!-- center window --><keybind key="W-G"><action name="MoveResizeTo"><x>center</x><y>center</y></action></keybind><!-- resize to 1/2 and center window --><keybind key="W-apostrophe"><action name="MoveResizeTo"><x>center</x><y>center</y><width>70%</width><height>75%</height></action></keybind><!-- shrink window --><keybind key="W-M"><action name="ResizeRelative"><right>-125</right><bottom>-125</bottom></action></keybind><!-- grow window --><keybind key="W-S-M"><action name="ResizeRelative"><right>125</right><bottom>125</bottom></action></keybind><!-- open gnome-calculator --><keybind key="W-S-a"><action name="Execute"><command> gnome-calculator </command></action></keybind><keybind key="W-1"><action name="Desktop"><desktop>
             1
         </desktop></action></keybind><keybind key="W-2"><action name="Desktop"><desktop>
             2
@@ -413,12 +338,7 @@ desktop 2
             yes
         </panels><desktop>
             yes
-                </desktop></action></keybind><!-- Keybindings for running applications --><!-- switch by application --><keybind key="W-grave"><action name="execute"><execute>wmctrl-switch-by-application</execute></action></keybind>
-                
-                <!-- dickbutt prevention mechanism: lock screen hotkey -->
-                <keybind key="W-S-L"><action name="execute"><execute>gnome-screensaver-command -l</execute></action></keybind>
-                
-                <!-- shutter screenshots --><keybind key="W-S-4"><action name="execute"><execute>shutter -s</execute></action></keybind><keybind key="W-S-5"><keybind key="space"><action name="execute"><execute>shutter -w</execute></action></keybind></keybind><keybind key="W-S-5"><keybind key="5"><action name="execute"><execute>shutter -f</execute></action></keybind></keybind><keybind key="W-e"><action name="Execute"><startupnotify><enabled>
+                </desktop></action></keybind><!-- Keybindings for running applications --><!-- switch by application --><keybind key="W-grave"><action name="execute"><execute>wmctrl-switch-by-application</execute></action></keybind><!-- dickbutt prevention mechanism: lock screen hotkey --><keybind key="W-S-L"><action name="execute"><execute>gnome-screensaver-command -l</execute></action></keybind><!-- shutter screenshots --><keybind key="W-S-4"><action name="execute"><execute>shutter -s</execute></action></keybind><keybind key="W-S-5"><keybind key="space"><action name="execute"><execute>shutter -w</execute></action></keybind></keybind><keybind key="W-S-5"><keybind key="5"><action name="execute"><execute>shutter -f</execute></action></keybind></keybind><keybind key="W-e"><action name="Execute"><startupnotify><enabled>
                 true
             </enabled><name>
                 PCManFM
@@ -426,12 +346,9 @@ desktop 2
             pcmanfm
         </command></action></keybind><!-- Keybindings for finding files --><keybind key="W-S-f"><action name="Execute"><command>
             pcmanfm --find-files
-            </command></action></keybind><!--keybindings for LXPanel -->
-        <keybind key="W-S-A-r"><action name="Execute"><command>
+            </command></action></keybind><!--keybindings for LXPanel --><keybind key="W-S-A-r"><action name="Execute"><command>
             lxpanelctl run
-            </command></action></keybind>
-            
-            <keybind key="A-F2"><action name="Execute"><command>
+            </command></action></keybind><keybind key="A-F2"><action name="Execute"><command>
             lxpanelctl run
         </command></action></keybind><keybind key="C-Escape"><action name="Execute"><command>
             lxpanelctl menu
