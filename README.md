@@ -153,6 +153,18 @@ arandr
 apt-get install arandr
 ```
 
+ncdu
+
+```
+apt-get install ncdu
+```
+
+ctags
+
+```
+apt-get install ctags
+```
+
 lubuntu software center
 
 pulseaudio volume control
