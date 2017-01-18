@@ -171,6 +171,8 @@ pulseaudio volume control
 
 xpad
 
+qpdfview
+
 ### xrandr notes
 
 http://www.sudo-juice.com/change-lxde-screen-resolution-ubuntu-lubuntu/
