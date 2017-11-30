@@ -26,7 +26,7 @@ lxde-rc.xml is the openbox configuration i use
 
 a lot of it tries to replicate common keystrokes from OS X 
 
-a big addition here is the **wmctrl-switch-by-application**, which lets you switch by application using super+` which mimics OS X behavior.
+a big addition here is the **wmctrl-switch-by-application**, which lets you switch by application using super+\` which mimics OS X behavior.
 
 i switch my desktop using super+1, super+2, super+n... etc so that's there
 
@@ -41,6 +41,8 @@ super+shift+5 -> space = window screenshot
 super+shift+5 -> 5 = full-screen screenshot
 
 some other basic stuff, like super+q quits programs is included
+
+note: looks like `gnome-screensaver-command -l` doesn't work any more, i've replaced it with lxlock
 
 ### autostart
 
