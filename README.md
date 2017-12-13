@@ -175,6 +175,9 @@ xpad
 
 qpdfview
 
+xev - hotkey record and viewing tool
+
+
 ### xrandr notes
 
 http://www.sudo-juice.com/change-lxde-screen-resolution-ubuntu-lubuntu/
